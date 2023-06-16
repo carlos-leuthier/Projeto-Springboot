@@ -21,6 +21,7 @@ public class Hotel {
     private double precoMedioDiaria;
 
     @OneToMany(mappedBy = "hotel", cascade = CascadeType.ALL)
+    @JoinColumn(name = "quartos_id")
     private List<Quarto> quartos;
 
     public Long getId() {
