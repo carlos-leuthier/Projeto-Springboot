@@ -21,7 +21,6 @@ public class Hotel {
     private double precoMedioDiaria;
 
     @OneToMany(mappedBy = "hotel", cascade = CascadeType.ALL)
-    @OneToMany
     @JoinColumn(name = "quarto_id")
     private Quarto quarto;
 
